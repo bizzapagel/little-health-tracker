@@ -1,2 +1,2 @@
 # Mini Projects
-An assortment of small projects.
+An assortment of little projects.
