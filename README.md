@@ -6,4 +6,5 @@ They are mostly for testing and prototyping.
 
 ### Projects
 
-* Quote Fetcher
+* Random Quote Fetcher
+* Infinite Photos
