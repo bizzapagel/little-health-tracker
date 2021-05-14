@@ -15,7 +15,9 @@ const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&coun
 // Helper function to set attributes on DOM elements
 // Is a good way to not have to write "setAttribute()" repeatedly
 function setAttributes(element, attributes) {
-
+    for(const key in attributes) {
+        element.setAttribute(key, attributes[key])
+    }
 }
 
 // Create elements for links and photos
@@ -23,15 +25,21 @@ function displayPhotos() {
     // Run function for each object in photos array
     photosArray.forEach((photo) => {
         // Create <a> to Unsplash
+        // Set attributes for new <a>
         const item = document.createElement("a");
-        item.setAttribute("class", "image");
-        item.setAttribute("href", photo.links.html);
-        item.setAttribute("target", "_blank");
+        setAttributes(item, {
+            class: "image",
+            target: "_blank",
+            href: photo.links.html,
+        });
         // Create <img> for photo
+        // Set attributes for new <img>
         const image = document.createElement("img");
-        image.setAttribute("src", photo.urls.regular);
-        image.setAttribute("alt", photo.alt_description);
-        image.setAttribute("title", photo.alt_description);
+        setAttributes(image, {
+            title: photo.alt_description,
+            alt: photo.alt_description,
+            src: photo.urls.regular,  
+        });
         // Put <img> inside the <a>
         // Put both inside imageContainer
         item.appendChild(image);
@@ -53,3 +61,5 @@ async function getPhotos() {
 
 // On load
 getPhotos();
+
+
