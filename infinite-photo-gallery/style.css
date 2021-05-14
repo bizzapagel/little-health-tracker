@@ -9,7 +9,6 @@ body {
 	min-height: 100vh;
 	font-family: 'Bitter', serif;
 	background: whitesmoke;
-	
 }
 
 body * {
@@ -25,6 +24,8 @@ h1 {
     display: inline-block;
 	width: 100%;
 }
+
+/* Loader */
 
 #loader {
 	position: fixed;
@@ -44,6 +45,8 @@ h1 {
 	width: 100px;
 }
 
+ /* Images */
+
 #image-container {
 	margin: auto;
 	max-width: 666px;
@@ -56,6 +59,7 @@ h1 {
 	position: relative;
 	margin-bottom: 30px;
 	overflow: hidden;
+	display: block;
 }
 
 #image-container .image img {
