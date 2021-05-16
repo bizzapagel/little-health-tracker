@@ -10,7 +10,7 @@ let photosArray = [];
 // Configure Unsplash API
 const count = 10;
 const apiKey = "6IVx3zhUz-X0U4QaGGBqzdhYfMiftJPgvmPLbTCvN7s";
-const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=landscape`;
 
 // Helper function to set attributes on DOM elements
 // Is a good way to not have to write "setAttribute()" repeatedly
@@ -58,6 +58,14 @@ async function getPhotos() {
         // If there was an error
     }
 }
+
+// Check to see if scrolling near bottom
+// of page. If so, load more mphotos
+window.addEventListener("scroll", () => {
+    if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
+        getPhotos();
+    }
+});
 
 // On load
 getPhotos();
