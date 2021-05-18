@@ -8,4 +8,4 @@ They are mostly for testing and prototyping.
 
 * Random Quote Fetcher
 * Infinite Photo Gallery
-* This Thing
+* Picture-in-Picture
