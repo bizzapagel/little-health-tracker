@@ -10,3 +10,4 @@ They are mostly for testing and prototyping.
 * Infinite Photo Gallery
 * Picture-in-Picture
 * Joke Teller Bot
+* Light/Dark Mode
