@@ -55,3 +55,18 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+nav {
+	z-index: 10;
+	position: fixed;
+	padding: 25px;
+	width: 100vw;	
+	text-align: right;
+	background: rgb(255 255 255 / 50%);
+}
+
+nav a {
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	margin-left: 25px;
+}
