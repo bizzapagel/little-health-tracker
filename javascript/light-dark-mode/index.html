@@ -9,14 +9,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
+    <!-- Header -->
+    <div id="header">
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Dark Mode Toggle -->
+        <div id="toggle">
+            <span id="toggle-icon">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </span>
+            <label class="theme-switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>        
+    </div>
+
     <!-- Home Section -->
     <section id="home">
         <h1>Yo, there!</h1>
@@ -29,15 +45,15 @@
         <div class="about-images">
             <div class="column">
                 <h2>Web Innovation</h2>
-                <img src="img/undraw_proud_coder_light.svg" alt="" />
+                <img id="image1" src="img/undraw_proud_coder_light.svg" alt="" />
             </div>
             <div class="column">
                 <h2>Problem Solving</h2>
-                <img src="img/undraw_feeling_proud_light.svg" alt="" />
+                <img id="image2" src="img/undraw_feeling_proud_light.svg" alt="" />
             </div>
             <div class="column">
                 <h2>High Concept</h2>
-                <img src="img/undraw_conceptual_idea_light.svg" alt="" />
+                <img id="image3" src="img/undraw_conceptual_idea_light.svg" alt="" />
             </div>
         </div>
     </section>

@@ -35,6 +35,11 @@ body {
 	background-color: var(--background);
 }
 
+html,
+body {
+	overflow: auto;
+}
+
 body * {
 	box-sizing: border-box;
 }
@@ -55,20 +60,29 @@ h2 {
 }
 
 section {
-	min-height: 100vh;
+	height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	margin-bottom: 100px;
+	padding-top: 150px;
+}
+
+ /* HEADER */
+
+#header {
+	z-index: 10;
+	position: fixed;
+	padding: 15px 30px;
+	width: 100vw;
+	background: rgb(255 255 255 / 75%);
+    display: flex;
+    align-items: center;
 }
 
 nav {
-	z-index: 10;
-	position: fixed;
-	padding: 25px;
-	width: 100vw;	
-	text-align: right;
-	background: rgb(255 255 255 / 75%);
+	display: flex;
 }
 
 nav a {
@@ -76,13 +90,89 @@ nav a {
 	letter-spacing: 1.5px;
 	border-bottom: 2px solid transparent;
 	text-decoration: none;
-	margin-left: 25px;
+	margin-right: 25px;
 }
 
 nav a:hover,
 nav a:focus {
 	color: var(--on-background);
 	border-bottom: 2px solid;
+}
+
+ /* LIGHT/DARK TOGGLE */
+
+#toggle {
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+	flex: 1;
+}
+  
+.toggle-text {
+	position: relative;
+	top: -4px;
+	right: 5px;
+	color: var(--on-background);
+}
+  
+.theme-switch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	width: 60px;
+}
+  
+.theme-switch input {
+	display: none;
+}
+
+.slider {
+	background: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 0.4s;
+}
+  
+.slider::before {
+	background: #fff;
+	bottom: 4px;
+	content: "";
+	height: 26px;
+	left: 4px;
+	position: absolute;
+	transition: 0.4s;
+	width: 26px;
+}
+  
+input:checked + .slider {
+	background: var(--primary-color);
+}
+
+input:checked + .slider::before {
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round::before {
+	border-radius: 50%;
+}
+
+#toggle-icon .fas {
+	font-size: 30px;
+	margin: 5px;
+}
+
+/* HOME SECTION */
+
+section#home {
+	padding-top: 250px;
 }
 
 /* ABOUT SECTION */
@@ -176,6 +266,10 @@ button:hover:not(.outline) {
 
 /* CONTACT SECTION */
 
+section#contact {
+	margin-bottom: 250px;
+}
+
 .contact-icons {
 	text-align: center;
 }
@@ -202,6 +296,10 @@ button:hover:not(.outline) {
 	.about-images .column {
 		margin: 0 15px 45px;
 	}
+
+	.project-textbox {
+		width: 70%;
+	}	
 }
 
 @media screen and (max-width: 767px) {
