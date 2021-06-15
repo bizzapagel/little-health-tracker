@@ -9,6 +9,8 @@
 	--on-background-alt: rgba(66, 66, 66, 0.7);
 	--background: rgb(255, 255, 255);
 	--box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.15);
+	--link-color-default: rgb(66, 66, 66);
+	--link-color-hover: #1b9999;
 }
 
 [data-theme="dark"] {
@@ -20,6 +22,8 @@
 	--on-background-alt: rgba(255, 255, 255, 0.7);
 	--background: #121212;
 	--box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+	--link-color-default: rgb(255, 255, 255);
+	--link-color-hover: #1b9999;
 }
 
 html {
@@ -86,6 +90,7 @@ nav {
 }
 
 nav a {
+	color: var(--link-color-default);
 	font-size: 16px;
 	letter-spacing: 1.5px;
 	border-bottom: 2px solid transparent;
@@ -95,7 +100,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-	color: var(--on-background);
+	color: var(--link-color-hover);
 	border-bottom: 2px solid;
 }
 
@@ -120,6 +125,7 @@ nav a:focus {
 	height: 34px;
 	position: relative;
 	width: 60px;
+	margin-left: 10px;
 }
   
 .theme-switch input {
