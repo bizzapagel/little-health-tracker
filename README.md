@@ -12,6 +12,10 @@ They are mostly for testing and prototyping.
 * Joke Teller Bot
 * Light/Dark Mode
 
+### PHP
+* This Thing
+
 ### React JS
 
-* Cool Project
+* Little Blog
+* Task Tracker
