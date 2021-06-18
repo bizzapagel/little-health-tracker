@@ -4,6 +4,9 @@ An assortment of little projects.
 
 They are mostly for testing and prototyping.
 
+### PHP
+* This Thing
+
 ### JavaScript
 
 * Random Quote Fetcher
@@ -11,9 +14,6 @@ They are mostly for testing and prototyping.
 * Picture-in-Picture
 * Joke Teller Bot
 * Light/Dark Mode
-
-### PHP
-* This Thing
 
 ### React JS
 
