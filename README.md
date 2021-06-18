@@ -4,9 +4,6 @@ An assortment of little projects.
 
 They are mostly for testing and prototyping.
 
-### PHP
-* This Thing
-
 ### JavaScript
 
 * Random Quote Fetcher
@@ -19,3 +16,6 @@ They are mostly for testing and prototyping.
 
 * Little Blog
 * Task Tracker
+
+### PHP
+* This Thing
