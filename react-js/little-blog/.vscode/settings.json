@@ -17,6 +17,7 @@
   },
 
   "subtleBrackets.style": {
-    "borderColor": "#ffff00",
+    // "borderColor": "#ffff00",
+    "borderColor": "#ffffff",
   }
 }

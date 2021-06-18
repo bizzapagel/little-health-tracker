@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import PostList from './PostList.js';
 
 const Home = () => {
@@ -8,9 +8,23 @@ const Home = () => {
     { title: 'My third post post', body: 'Lorem ipsum...', author: 'Pecky', id: 3 }
   ]);
 
+	const deletePost = (id) => {
+    const newPosts = posts.filter(post => post.id !== id);
+
+    // Rebuild the posts array
+    // This changes the app's state
+    setPosts(newPosts);
+	}
+
+  // Called whenever the app is re-rendered
+  // This happens anytime the app's state is changed
+  useEffect(() => {
+    console.log('did it');
+  });
+
   return (
     <div className="home">
-      <PostList title="All Posts" posts={posts} />
+      <PostList title="All Posts" posts={posts} deletePost={deletePost} />
     </div>
   );
 }
