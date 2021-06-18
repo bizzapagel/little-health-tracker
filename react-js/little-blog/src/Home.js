@@ -18,9 +18,11 @@ const Home = () => {
 
   // Called whenever the app is re-rendered
   // This happens anytime the app's state is changed
+  // Adding [] makes this run only on the first render
+  // Addind "posts" to [] makes this run also when that state changes
   useEffect(() => {
     console.log('did it');
-  });
+  }, []);
 
   return (
     <div className="home">
