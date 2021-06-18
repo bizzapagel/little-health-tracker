@@ -13,6 +13,10 @@
     "editorBracketMatch.background": "#0000",
 
     // "editor.lineHighlightBorder": "#e5ff00", // Light highlight background
-    "editor.lineHighlightBackground": "#0000", // Light highlight background
+    "editor.lineHighlightBackground": "#0000", // Light highlight background 
+  },
+
+  "subtleBrackets.style": {
+    "borderColor": "#ffff00",
   }
 }
