@@ -1,4 +1,4 @@
-const PostList = ({title, posts, deletePost}) => {
+const PostList = ({title, posts}) => {
 
 	return (
 		<div className="post-list">
@@ -6,8 +6,7 @@ const PostList = ({title, posts, deletePost}) => {
 			{posts.map((post) => (
 				<div className="post-preview" key={post.id}>
 					<h2>{post.title}</h2>
-					<p>Written by {post.author}</p>
-					<button onClick={() => deletePost(post.id)}>Delete Post</button>
+					<p>By {post.author}</p>
 				</div>
 			))}
 		</div>
