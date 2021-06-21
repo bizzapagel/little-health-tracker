@@ -1,4 +1,3 @@
-import {useState, useEffect} from 'react';
 import PostList from './PostList.js';
 import useFetch from './useFetch.js';
 
