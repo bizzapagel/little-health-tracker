@@ -1,27 +1,14 @@
 import {useState, useEffect} from 'react';
 import PostList from './PostList.js';
+import useFetch from './useFetch.js';
 
 const Home = () => {
-  const [posts, setPosts] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  // Called whenever the app is re-rendered
-  // This happens anytime the app's state is changed
-  // Adding [] makes this run only on the first render
-  // Addind "posts" to [] makes this run also when that state changes
-  useEffect(() => {
-    fetch('http://localhost:8000/posts')
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        setPosts(data);
-      });
-  }, []);
+  const {data: posts, isLoading, error} = useFetch('http://localhost:8000/posts');
 
   return (
     <div className="home">
-      {/* If posts has been set, call PostList */}
+      {error && <div>Could not load data</div>}
+      {isLoading && <div>Loading...</div>}
       {posts && <PostList title="All Posts" posts={posts} />}
     </div>
   );
