@@ -1,12 +1,13 @@
-function App() {
-	const name = 'Dave';
+import Header from './components/Header.js';
 
-	return (
-		<div className="container">
-			<h1>Hello, {name}!</h1>
-			<h2>Is this thing on?</h2>
-		</div>
-	);
+function App() {
+  return (
+    <div className="App">
+      <div className="container">
+        <Header />
+      </div>
+    </div>
+  );
 }
 
 export default App;
