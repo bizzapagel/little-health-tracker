@@ -1,8 +1,10 @@
+import Task from './Task.js';
+
 const TaskList = ({taskList}) => {
   return (
-    <div className="tasks">
+    <div className="tasklist">
       {taskList.map((task) => (
-        <h3 key={task.id}>{task.text}</h3>
+        <Task key={task.id} task={task}/>
       ))}
     </div>
   );
