@@ -26,11 +26,23 @@ function App() {
     ]
   );
 
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  }
+
+  const toggleReminder = (id) => {
+    console.log(id);
+  }
+
   return (
     <div className="App">
       <div className="container">
         <Header />
-        <TaskList taskList={tasks} />
+        {tasks.length > 0 ? (
+          <TaskList taskList={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+        ) : (
+          <p>No tasks to display</p>
+        )}
       </div>
     </div>
   );
