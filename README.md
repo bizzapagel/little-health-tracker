@@ -16,4 +16,5 @@ They are mostly for testing and prototyping.
 
 * Little Blog
 * Task Tracker
+* Chat App?
 
