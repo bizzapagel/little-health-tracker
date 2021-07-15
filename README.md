@@ -14,6 +14,12 @@ They are mostly for testing and prototyping.
 
 ### React JS
 
+#### Functional Components
+
 * Little Blog
 * Task Tracker
 
+#### Class-based Components
+
+* Little Blog
+* Task Tracker
