@@ -1,15 +1,14 @@
 import Button from './Button.js';
 
-const Header = () => {
-
-  const createTask = () => {
-    console.log('Create a task');
-  }
-
+const Header = ({onAdd, showAdd}) => {
   return (
     <header className="header">
       <h1>Task Tracker</h1>
-      <Button text="Add" bgColor="green" onClick={createTask} />
+      <Button 
+        text={showAdd ? 'Cancel' : 'Add'}
+        bgColor={showAdd ? 'red' : 'green'} 
+        onClick={onAdd}
+      />
     </header>
   )
 }
