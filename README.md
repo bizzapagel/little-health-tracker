@@ -12,8 +12,12 @@ They are mostly for testing and prototyping.
 * Joke Teller Bot
 * Light/Dark Mode
 
-### React JS
+### React JS (Functional)
 
 * Little Blog
 * Task Tracker
 
+### React JS (Class-based)
+
+* Little Blog
+* Task Tracker
