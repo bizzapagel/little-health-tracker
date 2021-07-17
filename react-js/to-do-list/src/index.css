@@ -1,0 +1,28 @@
+/* GENERAL */
+
+* {
+	margin: 0;
+	line-height: 1.5;
+	font-family: 'Bitter', serif;
+	font-family: 'Quicksand', sans-serif;
+	color: #333;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+}
+
+a,
+button {
+	text-decoration: none;
+}
+
+a:hover,
+button:hover {
+	text-decoration: underline;
+}
