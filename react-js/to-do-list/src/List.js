@@ -15,8 +15,7 @@ const List = ({todos}) => {
 
   return (
     <div className="list">
-      
-
+      <p>You have nothing to do.</p>
     </div>
   );
 }

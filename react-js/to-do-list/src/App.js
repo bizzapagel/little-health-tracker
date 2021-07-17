@@ -4,9 +4,9 @@ import List from './List.js';
 class App extends Component {
   state = {
     todos: [
-      // {title: 'Take out trash', id: 1},
-      // {title: 'Make rent payement', id: 2},
-      // {title: 'Do the dishes', id: 3}
+      {title: 'Take out trash', id: 1},
+      {title: 'Make rent payement', id: 2},
+      {title: 'Do the dishes', id: 3}
     ]
   }
 
