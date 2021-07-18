@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import List from './List.js';
+import Form from './Form.js';
 
 class App extends Component {
   state = {
@@ -10,11 +11,27 @@ class App extends Component {
     ]
   }
 
+  addTodo = (todo) => {
+    todo.id = Math.random()
+  }
+
+  deleteTodo = (id) => {
+    const todos = this.state.todos.filter(todo => {
+      return todo.id !== id;
+    });
+    this.setState({
+      todos: todos
+    })
+  }
+
   render() {
     return (
       <div className="app">
-        <h1 className="center-align blue-text">To-Dos</h1>
-        <List todos={this.state.todos} />
+        <div className="container">
+          <h1 className="center-align blue-text">To-Do</h1>
+          <Form />
+          <List todos={this.state.todos} deleteTodo={this.deleteTodo} />
+        </div>
       </div>
     );
   }
