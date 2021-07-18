@@ -4,7 +4,7 @@ An assortment of little projects.
 
 They are mostly for testing and prototyping.
 
-### JavaScript
+### Vanilla JS
 
 * Random Quote Fetcher
 * Infinite Photo Gallery
@@ -12,12 +12,16 @@ They are mostly for testing and prototyping.
 * Joke Teller Bot
 * Light/Dark Mode
 
-### React JS (Functional)
+### React JS
 
 * Little Blog
 * Task Tracker
+* To-Do List
 
-### React JS (Class-based)
+### Vue JS
 
-* Little Blog
 * Task Tracker
+
+### PHP
+
+*  Little Blog
