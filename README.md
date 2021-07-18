@@ -4,7 +4,7 @@ An assortment of little projects.
 
 They are mostly for testing and prototyping.
 
-### JavaScript
+### Vanilla JS
 
 * Random Quote Fetcher
 * Infinite Photo Gallery
