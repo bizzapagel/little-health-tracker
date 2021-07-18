@@ -4,10 +4,6 @@ An assortment of little projects.
 
 They are mostly for testing and prototyping.
 
-### PHP
-
-*  Thing
-
 ### Vanilla JS
 
 * Random Quote Fetcher
@@ -25,3 +21,7 @@ They are mostly for testing and prototyping.
 ### Vue JS
 
 * Task Tracker
+
+### PHP
+
+*  Thing
