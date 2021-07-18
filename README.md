@@ -15,8 +15,8 @@ They are mostly for testing and prototyping.
 ### React JS
 
 * Little Blog
-* To-Do List
 * Task Tracker
+* To-Do List
 
 ### Vue JS
 
@@ -24,4 +24,4 @@ They are mostly for testing and prototyping.
 
 ### PHP
 
-*  Thing
+*  Little Blog
