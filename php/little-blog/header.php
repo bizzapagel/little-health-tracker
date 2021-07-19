@@ -8,9 +8,13 @@
   <title>Little Blog</title>
 </head>
 <body>
-  <div id="app">
-    <div id="header">
-      <div class="container">
-        Little Blog
+  <header>
+    <div class="container">
+      <div class="row border bg-light mt-4">
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand" href="/">Little Blog</a>
+          <a class="btn btn-sm btn-outline-secondary" href="/new.php">New Post</a>
+        </nav>
       </div>
     </div>
+  </header>
