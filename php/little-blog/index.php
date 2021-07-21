@@ -46,8 +46,8 @@
       <h2>All Posts</h2>
       <div class="post-list col mt-4">
         <div class="row">
-          <?php foreach($posts as $post) { ?>
-            <div class="post col-4 mb-4">
+          <?php foreach($posts as $post): ?>
+            <div class="post col-12 col-sm-6 col-lg-4 mb-4">
               <div class="card h-100">
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $post['title']; ?></h5>
@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-          <?php } ?>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
