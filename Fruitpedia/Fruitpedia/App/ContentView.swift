@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Fruitpedia
 //
-//  Created by Dave Miller on 7/23/21.
+//  Created by David Miller on 7/23/21.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
-            .padding()
+//            .padding()
     }
 }
 

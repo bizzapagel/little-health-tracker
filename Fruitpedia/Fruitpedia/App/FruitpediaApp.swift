@@ -11,7 +11,7 @@ import SwiftUI
 struct FruitpediaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
         }
     }
 }
