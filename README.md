@@ -20,5 +20,8 @@ They are mostly for testing and prototyping.
 
 ### Swift
 
-* Fruit Friend
-* To-Do List
+* Fruitpedia
+* Joke Bot
+* Light/Dark
+* Photo Gallery
+
