@@ -175,7 +175,5 @@ func isNumInArray(num: Int, array: [Int]) -> Bool {
     return false
 }
 
-print("--------")
 print(isNumInArray(num: 11, array: numbers))
-
 
