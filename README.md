@@ -20,4 +20,5 @@ They are mostly for testing and prototyping.
 
 ### Swift
 
+* Fruit Friend
 * To-Do List
