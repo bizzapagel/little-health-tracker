@@ -18,10 +18,10 @@ They are mostly for testing and prototyping.
 * Task Tracker
 * To-Do List
 
-### Vue JS
+### Swift
 
-* Task Tracker
+* Fruitpedia
+* Joke Bot
+* Light/Dark
+* Photo Gallery
 
-### PHP
-
-* Little Blog
