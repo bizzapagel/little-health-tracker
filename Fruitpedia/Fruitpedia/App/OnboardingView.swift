@@ -11,6 +11,8 @@ struct OnboardingView: View {
     
     // MARK: - Properties
     
+    var fruits: [Fruit] = fruitData
+    
     init() {
         UIPageControl.appearance().currentPageIndicatorTintColor = .black
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
@@ -20,8 +22,8 @@ struct OnboardingView: View {
     
     var body: some View {
         TabView {
-            ForEach(0..<5) { item in
-                FruitCardView()
+            ForEach(fruits[0...4]) { item in
+                FruitCardView(fruit: item)
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
