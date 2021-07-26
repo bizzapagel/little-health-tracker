@@ -2,16 +2,23 @@
 //  FruitpediaApp.swift
 //  Fruitpedia
 //
-//  Created by Dave Miller on 7/23/21.
+//  Created by David Miller on 7/23/21.
 //
 
 import SwiftUI
 
 @main
 struct FruitpediaApp: App {
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            if isOnboarding {
+                OnboardingView()
+            } else {
+                ContentView()
+            }
+            
         }
     }
 }

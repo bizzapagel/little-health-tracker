@@ -1,6 +1,6 @@
 //
 //  StartButtonView.swift
-//  StartButtonView
+//  Fruitpedia
 //
 //  Created by David Miller on 7/22/21.
 //
@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct StartButtonView: View {
+    
     // MARK: - Properties
+    
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
 
     // MARK: - Body
     
     var body: some View {
         Button(action: {
-            // What happens on tap
+            isOnboarding = false
         }) {
             HStack(spacing: 8) {
                 Text("Start")
