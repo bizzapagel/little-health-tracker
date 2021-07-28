@@ -20,8 +20,9 @@ They are mostly for testing and prototyping.
 
 ### PHP
 
-* Little Blog
-* Social Network
+* Little Blogger
+* Mini Social Network
+* Task Tracker
 
 ### Swift
 
