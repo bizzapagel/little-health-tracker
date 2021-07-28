@@ -18,6 +18,12 @@ They are mostly for testing and prototyping.
 * Task Tracker
 * To-Do List
 
+### PHP
+
+* Little Blogger
+* Mini Social Network
+* Task Tracker
+
 ### Swift
 
 * Fruitpedia
