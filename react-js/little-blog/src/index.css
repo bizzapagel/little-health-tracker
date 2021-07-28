@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* GENERAL */
+
+* {
+	margin: 0;
+	line-height: 1.5;
+	font-family: 'Bitter', serif;
+	font-family: 'Quicksand', sans-serif;
+	color: #333;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+}
+
+a,
+button {
+	text-decoration: none;
+}
+
+a:hover,
+button:hover {
+	text-decoration: underline;
+}
+
+/* NAVIGATION */
+
+.navbar {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+	color: #f1356d;
+}
+
+.navbar .links {
+	margin-left: auto;
+}
+
+.navbar a {
+	margin-left: 16px;
+	padding: 6px;
+}
+
+.navbar a:hover {
+	color: #f1356d;
+}
+
+/* MAIN CONTENT */
+
+.content {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+/* HOME */
+
+.home h2 {
+	margin-bottom: 30px;
+}
+
+/* POST PREIVEW */
+
+.post-preview {
+	padding: 16px 18px;
+	margin-bottom: 30px;
+	background: #f9f9f9;
+	border: 1px solid #fafafa;
+	border-radius: 5px;
+	box-shadow: 1px 3px 5px rgb(0 0 0 / 10%);
+}
+
+.post-preview h2 {
+	font-size: 20px;
+	color: #f1356d;
+	margin-bottom: 6px;
+	display: inline-block;
+}
+
+.post-preview h2:hover {
+	text-decoration: underline;
+}
+
+.post-preview p {
+	text-transform: capitalize;
+}
+
+/* INDIVIDUAL POST PAGE */
+
+.post-details h2 {
+	margin-bottom: 6px;
+}
+
+.post-details .author {
+	margin-bottom: 20px;
+}
+
+.post-details .body {
+	margin-bottom: 30px;
+}
+
+.post-details button {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    padding: 4px 12px;
+}
+
+/* CREATE POST */
+
+.create h2 {
+	margin-bottom: 30px;
+}
+
+.create label {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.create input,
+.create textarea,
+.create select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	display: block;
+}
+
+.create button {
+	background: #f1356d;
+	color: #fff;
+    border: 0;
+    padding: 10px 25px;
+	margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create button:disabled {
+	cursor: default;
+	background: #aaa;
+}
+
+/* 404 - NOT FOUND */
+
+.not-found h2 {
+	margin-bottom: 30px;
+}
