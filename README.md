@@ -30,4 +30,7 @@ They are mostly for testing and prototyping.
 * Joke Bot
 * Light/Dark
 * Photo Gallery
-
+* Pigstagram
+* Quote Fetcher
+* Task Tracker
+* To-Do List
