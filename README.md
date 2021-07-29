@@ -29,6 +29,7 @@ They are mostly for testing and prototyping.
 * Fruitpedia
 * Joke Bot
 * Light/Dark
+* Note Taker
 * Photo Gallery
 * Pigstagram
 * Quote Fetcher
