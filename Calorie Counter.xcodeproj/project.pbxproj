@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39A8D31026B6E4D4000F49D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D30F26B6E4D4000F49D5 /* ContentView.swift */; };
+		39A8D31326B6E566000F49D5 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D31226B6E566000F49D5 /* GraphView.swift */; };
+		39A8D31526B6E5F0000F49D5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D31426B6E5F0000F49D5 /* ListView.swift */; };
+		39A8D31726B6E641000F49D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D31626B6E641000F49D5 /* SettingsView.swift */; };
+		39A8D31926B6FFA8000F49D5 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D31826B6FFA8000F49D5 /* NavView.swift */; };
 		39D0792B26B6DD3B003065B3 /* Calorie_CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0792A26B6DD3B003065B3 /* Calorie_CounterApp.swift */; };
-		39D0792D26B6DD3B003065B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0792C26B6DD3B003065B3 /* ContentView.swift */; };
 		39D0792F26B6DD3C003065B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D0792E26B6DD3C003065B3 /* Assets.xcassets */; };
 		39D0793226B6DD3C003065B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D0793126B6DD3C003065B3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39A8D30F26B6E4D4000F49D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		39A8D31226B6E566000F49D5 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		39A8D31426B6E5F0000F49D5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		39A8D31626B6E641000F49D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		39A8D31826B6FFA8000F49D5 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		39D0792726B6DD3B003065B3 /* Calorie Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calorie Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D0792A26B6DD3B003065B3 /* Calorie_CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_CounterApp.swift; sourceTree = "<group>"; };
-		39D0792C26B6DD3B003065B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39D0792E26B6DD3C003065B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D0793126B6DD3C003065B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39D0793326B6DD3C003065B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +41,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39A8D30926B6E337000F49D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				39D0792A26B6DD3B003065B3 /* Calorie_CounterApp.swift */,
+				39A8D30F26B6E4D4000F49D5 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		39A8D30A26B6E353000F49D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39A8D31826B6FFA8000F49D5 /* NavView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39A8D30B26B6E35E000F49D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		39A8D30C26B6E367000F49D5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		39A8D31126B6E4E3000F49D5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				39A8D31226B6E566000F49D5 /* GraphView.swift */,
+				39A8D31426B6E5F0000F49D5 /* ListView.swift */,
+				39A8D31626B6E641000F49D5 /* SettingsView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		39D0791E26B6DD3B003065B3 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +101,11 @@
 		39D0792926B6DD3B003065B3 /* Calorie Counter */ = {
 			isa = PBXGroup;
 			children = (
-				39D0792A26B6DD3B003065B3 /* Calorie_CounterApp.swift */,
-				39D0792C26B6DD3B003065B3 /* ContentView.swift */,
+				39A8D30926B6E337000F49D5 /* App */,
+				39A8D31126B6E4E3000F49D5 /* Scenes */,
+				39A8D30A26B6E353000F49D5 /* Views */,
+				39A8D30B26B6E35E000F49D5 /* Models */,
+				39A8D30C26B6E367000F49D5 /* Data */,
 				39D0792E26B6DD3C003065B3 /* Assets.xcassets */,
 				39D0793326B6DD3C003065B3 /* Info.plist */,
 				39D0793026B6DD3C003065B3 /* Preview Content */,
@@ -139,8 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D0792D26B6DD3B003065B3 /* ContentView.swift in Sources */,
+				39A8D31926B6FFA8000F49D5 /* NavView.swift in Sources */,
+				39A8D31726B6E641000F49D5 /* SettingsView.swift in Sources */,
+				39A8D31526B6E5F0000F49D5 /* ListView.swift in Sources */,
 				39D0792B26B6DD3B003065B3 /* Calorie_CounterApp.swift in Sources */,
+				39A8D31026B6E4D4000F49D5 /* ContentView.swift in Sources */,
+				39A8D31326B6E566000F49D5 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

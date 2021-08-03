@@ -1,8 +1,8 @@
 //
 //  Calorie_CounterApp.swift
-//  Calorie Counter
 //
-//  Created by Dave Miller on 8/1/21.
+//  Calorie Counter
+//  Created by David Miller.
 //
 
 import SwiftUI

@@ -1,0 +1,17 @@
+//
+//  SettingsView.swift
+//
+
+import SwiftUI
+
+struct SettingsView: View {
+    var body: some View {
+        Text("Settings Content")
+    }
+}
+
+struct SettingsView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+    }
+}
