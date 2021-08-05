@@ -1,3 +1,3 @@
 # Calorie Counter
 
-A minimalist app for counting calories.
+A minimalist web app for counting calories.
