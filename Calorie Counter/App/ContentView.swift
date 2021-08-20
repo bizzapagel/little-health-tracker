@@ -5,6 +5,13 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	// MARK: - Properties
+	
+	@State var selectedIndex = 0
+	
+	// MARK: - Body
+	
     var body: some View {
 		VStack {
 			
@@ -41,6 +48,8 @@ struct ContentView: View {
 		}
     }
 }
+
+// MARK: - Preview
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
