@@ -1,3 +1,3 @@
-# calorie-counter
+# Little Health Tracker
 
-(this repo will be converted into Little Health Tracker web app)
+A minimalist web app for tracking various health metrics.
