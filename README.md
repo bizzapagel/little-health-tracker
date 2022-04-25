@@ -4,6 +4,5 @@ A minimalist web app for tracking various health metrics.
 
 * Calorie Counter
 * Weight Chart
-Blood pressure
-Macros
-???
+* Blood Pressure
+
