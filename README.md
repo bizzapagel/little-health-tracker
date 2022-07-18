@@ -1,10 +1,3 @@
-# Little Health Tracker
+# Calorito
 
-**Should break this out into separate apps**
-
-A minimalist web app for tracking various health metrics.
-
-* Calorie Counter
-* Weight Chart
-* Blood Pressure
-
+A minimalist web app for tracking your caloric intake.
